@@ -1,68 +1,93 @@
 body {
-    padding: 20px;
+  padding: 20px;
 }
 
 h1 {
-    margin: 15px 0px;
-    font-size: 30px;
+  margin: 15px 0px;
+  font-size: 30px;
 }
 
 div {
-    height: 150px;
-    width: 150px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    margin: 20px 0px;
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: 20px 0px;
 }
 
 .relative {
-    background-image: url('https://memegenerator.net/img/instances/53829094.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("https://memegenerator.net/img/instances/53829094.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  bottom: 45px;
+  left: 50px;
+  z-index: 2;
 }
 
 .fixed {
-    background-image: url('https://media.makeameme.org/created/fixed.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("https://media.makeameme.org/created/fixed.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .absolute-parent {
-    height: 250px;
-    width: 250px;
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
 }
 
 .absolute-child {
-    margin: 0px;
-    background-image: url('https://memegenerator.net/img/instances/75046916.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: center;
+  margin: 0px;
+  background-image: url("https://memegenerator.net/img/instances/75046916.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
 }
 
 .sticky {
-    background-image: url('https://images1.memedroid.com/images/UPLOADED15/4f960f4c5c3df.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: center;
+  background-image: url("https://images1.memedroid.com/images/UPLOADED15/4f960f4c5c3df.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  position: sticky;
+  top: 20px;
 }
 
 .flexbox-examples {
-    height: 75vh;
-    box-sizing: border-box;
-    border: 2px solid black;
+  height: 75vh;
+  box-sizing: border-box;
+  border: 2px solid black;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .flexbox-examples div {
-    height: 100px;
-    width: 100px;
-    margin: 0px;
-    background-image: url('./assets/flex-box.svg');
-    background-size: cover;
-    background-position: center;
+  height: 100px;
+  width: 100px;
+  margin: 0px;
+  background-image: url("./assets/flex-box.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .overflow-shadow-example {
-    margin: 0 auto;
+  margin: 0 auto;
+  overflow-y: scroll;
+  box-shadow: 5px 5px 5px 5px red;
 }
