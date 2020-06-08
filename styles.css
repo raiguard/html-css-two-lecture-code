@@ -1,0 +1,68 @@
+body {
+    padding: 20px;
+}
+
+h1 {
+    margin: 15px 0px;
+    font-size: 30px;
+}
+
+div {
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 20px 0px;
+}
+
+.relative {
+    background-image: url('https://memegenerator.net/img/instances/53829094.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fixed {
+    background-image: url('https://media.makeameme.org/created/fixed.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.absolute-parent {
+    height: 250px;
+    width: 250px;
+}
+
+.absolute-child {
+    margin: 0px;
+    background-image: url('https://memegenerator.net/img/instances/75046916.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.sticky {
+    background-image: url('https://images1.memedroid.com/images/UPLOADED15/4f960f4c5c3df.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.flexbox-examples {
+    height: 75vh;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.flexbox-examples div {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    background-image: url('./assets/flex-box.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overflow-shadow-example {
+    margin: 0 auto;
+}
